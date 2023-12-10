@@ -3,7 +3,7 @@ version: 0.2
 phases:
   install:
     runtime-versions:
-      python: 3.12  # Adjust this to your Python version
+      python: 3.11  # Adjust this to your Python version
     commands:
       - echo "Installing Python dependencies"
       - python -m venv venv --copies
