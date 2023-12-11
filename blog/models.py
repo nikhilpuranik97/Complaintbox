@@ -8,7 +8,7 @@ from django.core.validators import FileExtensionValidator
 class PostModel(models.Model):
     title = models.CharField(max_length=100)
     content = models.TextField()
-    imagepost = models.ImageField(default='default.jpg', upload_to='posts', validators=[
+    imagepost = models.ImageField(default='garbage.jpg', upload_to='posts', validators=[
                               FileExtensionValidator(['png', 'jpg'])])
     location =  models.CharField(max_length=100)
     author = models.ForeignKey(User, on_delete=models.CASCADE)
